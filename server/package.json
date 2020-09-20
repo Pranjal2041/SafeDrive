@@ -1,0 +1,53 @@
+{
+    "name": "whatthehack",
+    "version": "1.0.0",
+    "description": "Data processing for CMT",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"No tests for now 😙\" && exit 0",
+        "eslint-test": "eslint './**/*.js'",
+        "eslint-fix": "eslint --fix './**/*.js'",
+        "prettier-test": "prettier --check './**/*.js'",
+        "prettier-fix": "prettier --write './**/*.js'",
+        "lint-tests": "rimraf dist/;npm run eslint-test;npm run prettier-test",
+        "lint-fixes": "rimraf dist/;npm run eslint-fix;npm run prettier-fix",
+        "build": "rimraf dist/ && babel ./src --out-dir dist/ --copy-files",
+        "start": "npm run build && node dist/server.js",
+        "clean": "rimraf dist/",
+        "devStart": "nodemon --ignore dist/ -e coffee,js,ejs,css --exec npm start"
+    },
+    "author": "WhatTheHack",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.2",
+        "express": "^4.17.1",
+        "https-proxy-agent": "^5.0.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.9.13",
+        "passport": "^0.4.1",
+        "passport-facebook": "^3.0.0",
+        "passport-github2": "^0.1.12",
+        "passport-google-oauth": "^2.0.0",
+        "qs": "^6.9.4",
+        "safe-regex": "^2.1.1",
+        "twilio": "^3.49.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-prettier": "^3.1.3",
+        "nodemon": "^2.0.3",
+        "prettier": "^2.0.5",
+        "rimraf": "^3.0.2"
+    }
+}
