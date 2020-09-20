@@ -6,11 +6,17 @@ SafeDrive is an application powered by **Cambridge Mobile Telematics (CMT)**, th
 * Get quick access to **medical help** and **legal advice**.
 * View **accident report data** in the form of charts, maps and graphics, **enriched and processed** by exploiting **publically available data sources**.
 
+## Developers
+* [Archit Bubna](https://github.com/architb12), IIT Delhi
+* [Harsh Agrawal](https://github.com/Harsh14901), IIT Delhi
+* [Pranjal Aggarwal](https://github.com/Pranjal2041), IIT Delhi
+* [Ritvik Gupta](https://github.com/ritvikgupta199), IIT Delhi
+
 ## Frameworks and Services used
 * The app is majorly built on the **Flutter** framework, along with **native Android** code.
 * SafeDrive uses a **Node** server to handle requests from the application.
-* The app uses a **MongoDB** database for storing user and crash report data.
-* **OpenGL** has been used to render 3D graphics in the application, to show a vehicle with its damaged components.
+* The server uses a **MongoDB** database for storing user and crash report data.
+* **OpenGL** has been used to render 3D Graphics in the application, to show a vehicle with its damaged components.
 * The app uses **Twilio Communication API** to send SMS messages directly.
 * The app fetches the maps from **OpenStreetMap** to display mapviews for crash sites and trips.
 
