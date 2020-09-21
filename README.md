@@ -1,6 +1,6 @@
 # SafeDrive
 
-This application was our team's entry to **HackMIT 2020**, and had won us the **First Prize** worth $2000 in HackMIT's **Cambridge Mobile Telematics** challenge. 
+This application was our team's entry to the **Cambridge Mobile Telematics** challenge in **HackMIT 2020**, and had won us the **First Prize** worth $2000.
 
 SafeDrive is an application powered by **Cambridge Mobile Telematics (CMT)**, that allows the user to perform the following:
 * Instantly **alert friends and family** in case of a road accident.
